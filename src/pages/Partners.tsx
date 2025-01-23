@@ -74,6 +74,9 @@ function Partners() {
           draggable
           autoplay
           loop
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         ></Carousel>
 
         {/* Tablet Carousel */}
@@ -126,6 +129,9 @@ function Partners() {
               )}
             </div>
           ))}
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         ></Carousel>
       </div>
     </section>

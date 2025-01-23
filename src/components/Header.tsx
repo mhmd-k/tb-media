@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { HiX } from "react-icons/hi";
-import { Button, Drawer, IconButton } from "@material-tailwind/react";
+import { Button, Drawer } from "@material-tailwind/react";
 
 const links = [
   { to: "/", label: "الرئيسية" },
@@ -99,9 +99,23 @@ function Header() {
           </ul>
         </div>
       </header>
-      <Drawer open={open} onClose={closeDrawer} className="p-4 bg-main">
+      <Drawer
+        open={open}
+        onClose={closeDrawer}
+        className="p-4 bg-main"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         <div className="mb-6">
-          <Button variant="text" color="blue-gray" onClick={closeDrawer}>
+          <Button
+            variant="text"
+            color="blue-gray"
+            onClick={closeDrawer}
+            placeholder={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          >
             <HiX />
           </Button>
         </div>

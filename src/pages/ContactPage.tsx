@@ -49,18 +49,30 @@ function ContactPage() {
           >
             <SectionHeading title="تواصل معنا واطلب خدمتك" />
             <div className="space-y-4">
-              <Typography variant="h6" className="-mb-3">
+              <Typography
+                variant="h6"
+                className="-mb-3"
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 الاسم كامل
               </Typography>
-              <div class="w-full min-w-[200px]">
+              <div className="w-full min-w-[200px]">
                 <input
                   type="text"
-                  class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-2 border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
+                  className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border-2 border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
                   style={{ background: "#171d2a" }}
                 />
               </div>
 
-              <Typography variant="h6" className="-mb-3">
+              <Typography
+                variant="h6"
+                className="-mb-3"
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 البريد الإلكتروني
               </Typography>
               <div className="w-full min-w-[200px]">
@@ -71,7 +83,13 @@ function ContactPage() {
                 />
               </div>
 
-              <Typography variant="h6" className="-mb-3">
+              <Typography
+                variant="h6"
+                className="-mb-3"
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 العنوان
               </Typography>
               <div className="w-full min-w-[200px]">
@@ -82,7 +100,13 @@ function ContactPage() {
                 />
               </div>
 
-              <Typography variant="h6" className="-mb-3">
+              <Typography
+                variant="h6"
+                className="-mb-3"
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 رسالتك لنا (اختياري)
               </Typography>
               <div className="w-full min-w-[200px]">
@@ -93,7 +117,14 @@ function ContactPage() {
                 />
               </div>
 
-              <Button color="purple" fullWidth className="text-black">
+              <Button
+                color="purple"
+                fullWidth
+                className="text-black"
+                placeholder={undefined}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              >
                 إرسال
               </Button>
             </div>
