@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #0d1018;
+  --main-color: #673ab7;
+}
+
+* {
+  box-sizing: border-box;
+  text-align: right;
+  direction: rtl;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Kufi Arabic", serif;
+  color: white;
+  background-color: var(--bg-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  line-height: 1.4 !important;
+}
+
+header {
+  background-color: var(--main-color);
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  z-index: 100;
+}
+
+footer {
+  background-color: #171d2a;
+}
+
+.lottie > div {
+  cursor: auto;
+}
+
+.arrow-lottie {
+  left: -85px;
+  top: -20px;
+}
+
+.cube-lottie {
+  left: -30px;
+}
+
+.home-image {
+  height: 400px;
+  max-width: 400px;
+}
+
+@media (min-width: 1536px) {
+  .home-image {
+    height: 500px;
+    max-width: 500px;
+  }
+}
+
+.home-image-cube {
+  background: linear-gradient(
+    45deg,
+    #6a0dad,
+    #8a2be2,
+    #9370db,
+    #dda0dd,
+    #d8bfd8
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 4s linear infinite;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
