@@ -7,7 +7,7 @@ import { Button, Drawer } from "@material-tailwind/react";
 
 const links = [
   { to: "/", label: "الرئيسية" },
-  { to: "how-are-we", label: "من نحن" },
+  { to: "/how-are-we", label: "من نحن" },
   { to: "/services", label: "خدماتنا" },
   { to: "/partners", label: "شركائنا" },
   { to: "/contact-us", label: "تواصل معنا" },

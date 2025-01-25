@@ -1,6 +1,6 @@
-import SectionHeading from "../components/SectionHeading";
-import TextToIcon from "../components/TextToIcon";
-import { teamMember } from "../types";
+import SectionHeading from "../../components/SectionHeading";
+import TextToIcon from "../../components/TextToIcon";
+import { teamMember } from "../../types";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const team: teamMember[] = [

@@ -2,16 +2,17 @@ import { Button, Typography } from "@material-tailwind/react";
 import { BiPhoneIncoming } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
-import SectionHeading from "../components/SectionHeading";
+import SectionHeading from "../../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
+import Lottie from "react-lottie";
+import { contactLottieOptions } from "../../lottiesOptions";
 
 function ContactPage() {
   return (
     <section className="py-20">
       <div className="container mx-auto overflow-hidden">
-        <div className="flex flex-col lg:flex-row text-white min-h-screen">
+        <div className="flex flex-col lg:flex-row text-white">
           {/* Contact Info Section */}
-
           <ScrollAnimation
             animateIn="fadeInRight"
             animateOnce
@@ -25,19 +26,34 @@ function ContactPage() {
                 className="w-20 h-20 mx-auto md:mx-0"
               />
             </div>
-            <div className="space-y-4">
-              <div className="flex items-center space-x-4">
-                <FaLocationDot />
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <div className="rounded-full bg-purple-500 p-4 text-xl relative">
+                  <div className="w-1 h-10 bg-purple-500 absolute right-6 -bottom-10"></div>
+                  <FaLocationDot />
+                </div>
                 <p>المملكة العربية السعودية، مدينة الرياض</p>
               </div>
-              <div className="flex items-center space-x-4">
-                <BiPhoneIncoming />
+              <div className="flex items-center gap-4">
+                <div className="rounded-full bg-purple-500 p-4 text-xl relative">
+                  <div className="w-1 h-10 bg-purple-500 absolute right-6 -bottom-10"></div>
+
+                  <BiPhoneIncoming />
+                </div>
                 <p>0552200688</p>
               </div>
-              <div className="flex items-center space-x-4">
-                <TfiEmail />
+              <div className="flex items-center gap-4">
+                <div className="rounded-full bg-purple-500 p-4 text-xl">
+                  <TfiEmail />
+                </div>
                 <p>Support@marketive.sa.com</p>
               </div>
+
+              <Lottie
+                options={contactLottieOptions}
+                height={300}
+                style={{ cursor: "default", pointerEvents: "none" }}
+              />
             </div>
           </ScrollAnimation>
 

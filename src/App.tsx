@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import { ThemeProvider } from "@material-tailwind/react";
-import ErrorPage from "./pages/ErrorPage";
+import ErrorPage from "./pages/home/ErrorPage";
+import HowAreWe from "./pages/HowAreWe";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/how-are-we",
+        element: <HowAreWe />,
       },
     ],
   },

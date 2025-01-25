@@ -1,4 +1,4 @@
-import SectionHeading from "../components/SectionHeading";
+import SectionHeading from "../../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const services = [

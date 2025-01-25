@@ -7,15 +7,17 @@ import {
 } from "react-icons/fa";
 import { LiaLinkSolid } from "react-icons/lia";
 import Lottie from "react-lottie";
-import SectionHeading from "../components/SectionHeading";
+import SectionHeading from "../../components/SectionHeading";
 import Services from "./Services";
 import Partners from "./Partners";
 import Team from "./Team";
-import cubeLottie from "../assets/lotties/cube-lottie.json";
-import arrowLottie from "../assets/lotties/arrow-pointing-lottie.json";
-import phoneLottie from "../assets/lotties/phone-lottie.json";
 import ContactPage from "./ContactPage";
 import ScrollAnimation from "react-animate-on-scroll";
+import {
+  arrowLottieOptions,
+  cubelottieOptions,
+  phoneLottieOptions,
+} from "../../lottiesOptions";
 
 const socialLinks = [
   { to: "", icon: <FaTwitter /> },
@@ -70,24 +72,6 @@ const features = [
   },
 ];
 
-const arrowLottieOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: arrowLottie,
-};
-
-const cubelottieOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: cubeLottie,
-};
-
-const phoneLottieOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: phoneLottie,
-};
-
 function Home() {
   return (
     <>
@@ -96,7 +80,11 @@ function Home() {
           <div className="col-span-12 lg:col-span-7 mb-16 lg:mb-0 flex flex-col justify-center px-0 relative overflow-hidden">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce>
               <div className="absolute right-10 top-32 lottie">
-                <Lottie options={phoneLottieOptions} width={50} />
+                <Lottie
+                  options={phoneLottieOptions}
+                  width={50}
+                  style={{ pointerEvents: "none" }}
+                />
               </div>
               <h1 className="text-center text-purple-500 text-2xl my-5 md:text-5xl">
                 نفهم <span className="text-white !important">تطلعاتكم</span>{" "}
@@ -116,7 +104,11 @@ function Home() {
               </p>
               <div className="relative mx-auto w-fit">
                 <div className="absolute arrow-lottie lottie">
-                  <Lottie options={arrowLottieOptions} width={100} />
+                  <Lottie
+                    options={arrowLottieOptions}
+                    width={100}
+                    style={{ pointerEvents: "none" }}
+                  />
                 </div>
                 <a
                   className="px-8 py-4 bg-purple-600 w-fit transition-all flex gap-4 items-center rounded-lg hover:opacity-80 hover:scale-110"
@@ -132,7 +124,11 @@ function Home() {
             <ScrollAnimation animateIn="fadeInRight" animateOnce>
               <div className="p-12 relative h-400px home-image">
                 <div className="absolute cube-lottie lottie">
-                  <Lottie options={cubelottieOptions} width={90} />
+                  <Lottie
+                    options={cubelottieOptions}
+                    width={90}
+                    style={{ pointerEvents: "none" }}
+                  />
                 </div>
                 <div className="home-image-cube w-16 h-16 rounded-xl opacity-80 absolute right-6 top-6"></div>
                 <div className="home-image-cube w-12 h-12 rounded-xl absolute left-5 bottom-20 p-2">
