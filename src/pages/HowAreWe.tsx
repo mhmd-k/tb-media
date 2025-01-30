@@ -2,7 +2,18 @@ import SectionHeading from "../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "react-lottie";
 import { cubelottieOptions } from "../lottiesOptions";
-import ContactPage from "./home/ContactPage";
+import ContactPage from "./ContactPage";
+import Counter from "../components/Counter";
+import { Typewriter } from "react-simple-typewriter";
+import { FaCalendarAlt, FaChartBar, FaCheckCircle } from "react-icons/fa";
+import { IoRocketSharp } from "react-icons/io5";
+
+const textArr = [
+  "نفهم تطلعاتكم",
+  "نجعل نشاطهم التجاري أكثر فعالية",
+  "نركز على الإبداع والعمل باحترافية عالية",
+  "لا نغفل أهمية ضمان الأمان والحماية",
+];
 
 function HowAreWe() {
   return (
@@ -60,7 +71,7 @@ function HowAreWe() {
       </main>
 
       <section>
-        <div className="container mx-auto flex gap-8 justify-center items-center flex-wrap overflow-hidden">
+        <div className="container mx-auto px-4 flex gap-8 justify-center items-center flex-wrap overflow-hidden">
           <div className="w-full lg:w-5/12">
             <ScrollAnimation animateIn="fadeInLeft" animateOnce>
               <SectionHeading title="رؤيتنا" />
@@ -83,6 +94,95 @@ function HowAreWe() {
           </div>
         </div>
       </section>
+
+      <section className="bg-secondary py-10">
+        <div className="container px-5 mx-auto overflow-hidden">
+          <SectionHeading title="في TB-Media" />
+
+          {/* Statistics Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 w-full max-w-[1000px] mx-auto">
+            <div className="bg-main rounded-lg p-10 flex border-1 border-transparent flex-col items-center gap-4 transition-all hover:border-purple-500">
+              <p className="text-5xl relative">
+                <Counter value={200} />
+                <span className="absolute -top-4 -left-10 text-purple-500">
+                  +
+                </span>
+              </p>
+              <p className="mt-2">خدمة مقدمة</p>
+            </div>
+            <div className="bg-main rounded-lg p-10 flex flex-col items-center gap-4">
+              <p className="text-5xl relative">
+                <Counter value={100} />
+                <span className="absolute -top-4 -left-10 text-purple-500">
+                  +
+                </span>
+              </p>
+              <p className="mt-2">عميل راضي</p>
+            </div>
+            <div className="bg-main rounded-lg p-10 flex flex-col items-center gap-4">
+              <p className="text-5xl relative">
+                <Counter value={50} />
+                <span className="absolute -top-4 -left-10 text-purple-500">
+                  +
+                </span>
+              </p>
+              <p className="mt-2">مشروع مكتمل</p>
+            </div>
+          </div>
+
+          {/* Description Section */}
+          <div className="text-center w-full flex justify-center my-14">
+            <p className="text-xs md:text-lg flex font-bold text-nowrap">
+              <span className="text-purple-500">| نحن في Tb-media |</span>
+              <Typewriter
+                words={textArr}
+                typeSpeed={70}
+                deleteSpeed={50}
+                cursor
+                loop
+                cursorColor="#673ab7"
+              />
+            </p>
+          </div>
+
+          {/* Steps Section */}
+          <div className="flex flex-wrap gap-4 justify-center items-center w-full mb-8 mx-auto">
+            <ScrollAnimation
+              animateIn="fadeInDown"
+              animateOnce
+              className="flex flex-col items-center justify-center bg-purple-500 p-4 h-44 flex-1 rounded-xl"
+            >
+              <FaChartBar size={70} />
+              <p className="mt-6 text-lg font-bold">نحلل احتياجك</p>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInDown"
+              animateOnce
+              className="flex flex-col items-center justify-center bg-purple-500 p-4 h-44 flex-1 rounded-xl"
+            >
+              <FaCalendarAlt size={70} />
+              <p className="mt-6 text-lg font-bold">نجهز الخطة</p>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInDown"
+              animateOnce
+              className="flex flex-col items-center justify-center bg-purple-500 p-4 h-44 flex-1 rounded-xl"
+            >
+              <IoRocketSharp size={70} />
+              <p className="mt-6 text-lg font-bold">ننطلق للإبداع</p>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeInDown"
+              animateOnce
+              className="flex flex-col items-center justify-center bg-purple-500 p-4 h-44 flex-1 rounded-xl"
+            >
+              <FaCheckCircle size={70} />
+              <p className="mt-6 text-lg font-bold">نحقق أفضل النتائج</p>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
       <ContactPage />
     </>
   );

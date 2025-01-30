@@ -11,7 +11,7 @@ import SectionHeading from "../../components/SectionHeading";
 import Services from "./Services";
 import Partners from "./Partners";
 import Team from "./Team";
-import ContactPage from "./ContactPage";
+import ContactPage from "../ContactPage";
 import ScrollAnimation from "react-animate-on-scroll";
 import {
   arrowLottieOptions,
@@ -159,7 +159,7 @@ function Home() {
         </div>
       </main>
 
-      <section className="py-20" style={{ background: "#171d2a" }}>
+      <section className="py-20 bg-secondary">
         <div className="text-white container px-4 overflow-hidden">
           <ScrollAnimation animateIn="fadeInLeft" animateOnce>
             <SectionHeading title="كيف نعمل وننجح" />

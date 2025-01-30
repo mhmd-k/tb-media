@@ -18,3 +18,10 @@ export type teamMember = {
   title: string;
   social: socialLink[];
 };
+
+export type service = {
+  title: string;
+  description: string;
+  image: string;
+  imageAlignment: "left" | "right";
+};

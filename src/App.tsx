@@ -4,6 +4,8 @@ import Home from "./pages/home/Home";
 import { ThemeProvider } from "@material-tailwind/react";
 import ErrorPage from "./pages/home/ErrorPage";
 import HowAreWe from "./pages/HowAreWe";
+import ContactPage from "./pages/ContactPage";
+import ServicesPage from "./pages/ServicesPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,18 @@ const router = createBrowserRouter([
       {
         path: "/how-are-we",
         element: <HowAreWe />,
+      },
+      {
+        path: "/contact-us",
+        element: (
+          <main className="pt-5">
+            <ContactPage />
+          </main>
+        ),
+      },
+      {
+        path: "/services",
+        element: <ServicesPage />,
       },
     ],
   },

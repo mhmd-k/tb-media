@@ -2,10 +2,10 @@ import { Button, Typography } from "@material-tailwind/react";
 import { BiPhoneIncoming } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
-import SectionHeading from "../../components/SectionHeading";
+import SectionHeading from "../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "react-lottie";
-import { contactLottieOptions } from "../../lottiesOptions";
+import { contactLottieOptions } from "../lottiesOptions";
 
 function ContactPage() {
   return (
@@ -16,8 +16,7 @@ function ContactPage() {
           <ScrollAnimation
             animateIn="fadeInRight"
             animateOnce
-            className="w-full lg:w-1/2  p-8 md:p-16 flex flex-col rounded-2xl"
-            style={{ background: "#171d2a" }}
+            className="w-full lg:w-1/2  p-8 md:p-16 flex flex-col rounded-2xl bg-secondary"
           >
             <div className="mb-6">
               <img

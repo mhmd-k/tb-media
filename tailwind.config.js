@@ -21,6 +21,7 @@ module.exports = withMT({
       },
       backgroundColor: {
         main: "#0d1018",
+        secondary: "#171d2a",
         purple: {
           100: "#e1d8f1",
           200: "#c2b0e2",
