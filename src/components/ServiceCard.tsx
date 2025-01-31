@@ -17,6 +17,7 @@ function ServiceCard({ title, description, image, imageAlignment }: service) {
           src={image}
           className="w-full h-full object-cover rounded-2xl"
           alt=""
+          loading="lazy"
         />
       </ScrollAnimation>
 

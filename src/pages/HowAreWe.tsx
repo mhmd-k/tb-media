@@ -83,6 +83,7 @@ function HowAreWe() {
                 src="/vision.png"
                 className="w-full h-full object-contain"
                 alt=""
+                loading="lazy"
               />
             </ScrollAnimation>
           </div>
