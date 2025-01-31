@@ -90,7 +90,7 @@ function Partners({
           transition={{ type: "spring" }}
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div
-              className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-6 items-center p-2"
+              className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-2 items-center p-2"
               style={{ direction: "ltr" }}
             >
               {new Array(length).fill("").map((_, i) => (
