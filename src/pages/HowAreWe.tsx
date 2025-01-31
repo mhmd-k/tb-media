@@ -1,13 +1,13 @@
 import SectionHeading from "../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "react-lottie";
-import { cubelottieOptions } from "../lottiesOptions";
+import { cubelottieOptions } from "../data/lottiesOptions";
 import ContactPage from "./ContactPage";
 import Counter from "../components/Counter";
 import { Typewriter } from "react-simple-typewriter";
 import { FaCalendarAlt, FaChartBar, FaCheckCircle } from "react-icons/fa";
 import { IoRocketSharp } from "react-icons/io5";
-import { howAreWetextArr } from "../data";
+import { howAreWetextArr } from "../data/data";
 
 function HowAreWe() {
   return (

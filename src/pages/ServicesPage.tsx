@@ -1,5 +1,5 @@
 import ServiceCard from "../components/ServiceCard";
-import { extendedServices } from "../data";
+import { extendedServices } from "../data/data";
 
 function ServicesPage() {
   return (

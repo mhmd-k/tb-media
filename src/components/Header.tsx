@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { HiX } from "react-icons/hi";
 import { Button, Drawer } from "@material-tailwind/react";
-import { headerLinks, headerSocialLinks } from "../data";
+import { headerLinks, headerSocialLinks } from "../data/data";
 
 function Header() {
   const [open, setOpen] = useState(false);

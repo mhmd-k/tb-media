@@ -1,7 +1,7 @@
 import SectionHeading from "../../components/SectionHeading";
 import TextToIcon from "../../components/TextToIcon";
 import ScrollAnimation from "react-animate-on-scroll";
-import { team } from "../../data";
+import { team } from "../../data/data";
 
 function Team() {
   return (

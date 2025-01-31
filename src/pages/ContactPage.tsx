@@ -5,7 +5,7 @@ import { TfiEmail } from "react-icons/tfi";
 import SectionHeading from "../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "react-lottie";
-import { contactLottieOptions } from "../lottiesOptions";
+import { contactLottieOptions } from "../data/lottiesOptions";
 
 function ContactPage() {
   return (

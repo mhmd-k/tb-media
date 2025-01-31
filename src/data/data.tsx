@@ -8,7 +8,7 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-import { service, teamMember } from "./types";
+import { service, teamMember } from "../types";
 
 export const socialLinks = [
   { to: "https://your-X-link", icon: <BsTwitterX /> },

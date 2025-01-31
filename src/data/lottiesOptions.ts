@@ -1,7 +1,7 @@
-import cubeLottie from "./assets/lotties/cube-lottie.json";
-import arrowLottie from "./assets/lotties/arrow-pointing-lottie.json";
-import phoneLottie from "./assets/lotties/phone-lottie.json";
-import contactLottie from "./assets/lotties/contact-lottie.json";
+import cubeLottie from "../assets/lotties/cube-lottie.json";
+import arrowLottie from "../assets/lotties/arrow-pointing-lottie.json";
+import phoneLottie from "../assets/lotties/phone-lottie.json";
+import contactLottie from "../assets/lotties/contact-lottie.json";
 
 export const contactLottieOptions = {
   loop: true,

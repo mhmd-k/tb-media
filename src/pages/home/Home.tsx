@@ -10,8 +10,8 @@ import {
   arrowLottieOptions,
   cubelottieOptions,
   phoneLottieOptions,
-} from "../../lottiesOptions";
-import { homePageFeatures, socialLinks } from "../../data";
+} from "../../data/lottiesOptions";
+import { homePageFeatures, socialLinks } from "../../data/data";
 
 function Home() {
   return (

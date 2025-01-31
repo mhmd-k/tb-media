@@ -1,7 +1,7 @@
 import SectionHeading from "../../components/SectionHeading";
 import { Carousel } from "@material-tailwind/react";
 import ScrollAnimation from "react-animate-on-scroll";
-import { partners } from "../../data";
+import { partners } from "../../data/data";
 
 const TabletPartners: Array<{ imageOne: string; imageTwo: string | null }> = [];
 

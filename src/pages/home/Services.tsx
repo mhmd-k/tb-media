@@ -1,6 +1,6 @@
 import SectionHeading from "../../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
-import { services } from "../../data";
+import { services } from "../../data/data";
 
 function Services() {
   return (
