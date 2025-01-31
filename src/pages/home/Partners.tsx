@@ -18,10 +18,16 @@ partners.forEach((e, i) => {
   }
 });
 
-function Partners() {
+function Partners({
+  bgColor,
+  textColor,
+}: {
+  bgColor: string;
+  textColor: string;
+}) {
   return (
-    <section className="py-20 bg-blue-gray-50 text-black" id="#partners">
-      <div className="container mx-auto">
+    <section className="py-20 text-black" style={{ backgroundColor: bgColor }}>
+      <div className="container mx-auto" style={{ color: textColor }}>
         <ScrollAnimation animateIn="fadeInRight" animateOnce>
           <SectionHeading title="شركاء النجاح" />
         </ScrollAnimation>
@@ -43,18 +49,16 @@ function Partners() {
           style={{ direction: "ltr" }}
           className="h-60 flex md:hidden"
           transition={{ type: "spring" }}
-          navigation={({ setActiveIndex, activeIndex }) => (
+          navigation={({ setActiveIndex, activeIndex, length }) => (
             <div
-              className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-6 items-center p-2"
+              className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-2 items-center p-2"
               style={{ direction: "ltr" }}
             >
-              {partners.map((_, i) => (
+              {new Array(length).fill("").map((_, i) => (
                 <span
                   key={i}
-                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] hover:scale-150 ${
-                    activeIndex === i
-                      ? "w-8 bg-purple-500 hover:w-10 "
-                      : "w-2 h-2 rounded-full bg-main "
+                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                    activeIndex === i ? "w-8 bg-purple-500" : "w-4 bg-gray-600"
                   }`}
                   onClick={() => setActiveIndex(i)}
                 />
@@ -84,18 +88,16 @@ function Partners() {
           style={{ direction: "ltr" }}
           className="h-60 hidden md:flex lg:hidden"
           transition={{ type: "spring" }}
-          navigation={({ setActiveIndex, activeIndex }) => (
+          navigation={({ setActiveIndex, activeIndex, length }) => (
             <div
               className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-6 items-center p-2"
               style={{ direction: "ltr" }}
             >
-              {TabletPartners.map((_, i) => (
+              {new Array(length).fill("").map((_, i) => (
                 <span
                   key={i}
-                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] hover:scale-150 ${
-                    activeIndex === i
-                      ? "w-8 bg-purple-500 hover:w-10 "
-                      : "w-2 h-2 rounded-full bg-main "
+                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                    activeIndex === i ? "w-8 bg-purple-500" : "w-4 bg-gray-600"
                   }`}
                   onClick={() => setActiveIndex(i)}
                 />

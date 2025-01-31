@@ -190,7 +190,7 @@ function Home() {
 
       <Services />
 
-      <Partners />
+      <Partners bgColor="#f5f5f5" />
 
       <Team />
 
