@@ -1,28 +1,6 @@
 import SectionHeading from "../../components/SectionHeading";
 import ScrollAnimation from "react-animate-on-scroll";
-
-const services = [
-  {
-    title: "موشن غرافيك",
-    icon: "/motion-graphics.png",
-  },
-  {
-    title: "دعم فني للمواقع الاكترونية",
-    icon: "/customer-service-agent.png",
-  },
-  {
-    title: "تصميم تطبيقات الموبايل",
-    icon: "/user-interface.png",
-  },
-  {
-    title: "تصميم مواقع ويب",
-    icon: "/coding.png",
-  },
-  {
-    title: "تصاميم وبناء هوية تجارية",
-    icon: "/trade-identity.png",
-  },
-];
+import { services } from "../../data";
 
 function Services() {
   return (

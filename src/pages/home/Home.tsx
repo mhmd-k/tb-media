@@ -1,10 +1,3 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaSnapchat,
-  FaTiktok,
-  FaTwitter,
-} from "react-icons/fa";
 import { LiaLinkSolid } from "react-icons/lia";
 import Lottie from "react-lottie";
 import SectionHeading from "../../components/SectionHeading";
@@ -18,59 +11,7 @@ import {
   cubelottieOptions,
   phoneLottieOptions,
 } from "../../lottiesOptions";
-
-const socialLinks = [
-  { to: "", icon: <FaTwitter /> },
-  { to: "", icon: <FaTiktok /> },
-  { to: "", icon: <FaFacebook /> },
-  { to: "", icon: <FaInstagram /> },
-  { to: "", icon: <FaSnapchat /> },
-];
-
-const features = [
-  {
-    title: "فريق متكامل ومتخصص",
-    description:
-      "نعمل كفريق واحد متماسك، كل فرد يمتلك الخبرة والمعرفة اللازمة لضمان نجاح مشروعك.",
-    icon: "👥",
-    color: "text-green-400",
-  },
-  {
-    title: "الإتقان والاحترافية",
-    description:
-      "فريقنا المكون من الخبراء ملتزم بتقديم خدمات عالية الجودة تلبّي أعلى معايير الاحترافية.",
-    icon: "⌨️",
-    color: "text-yellow-400",
-  },
-  {
-    title: "رؤية ثاقبة وخطط مدروسة",
-    description:
-      "نقدّم استراتيجيات شاملة ومخططات عمل تفصيلية مصممة خصيصًا لتحقيق أهدافك.",
-    icon: "👁️",
-    color: "text-red-400",
-  },
-  {
-    title: "أسعار تنافسية",
-    description:
-      "نقدّم لك أفضل الأسعار في السوق مع ضمان تقديم قيمة مضافة لمشروعك.",
-    icon: "💰",
-    color: "text-purple-400",
-  },
-  {
-    title: "دعم فني مستمر",
-    description:
-      "نقدّم لك الدعم الفني اللازم والمتخصص على مدار الساعة لضمان سير عملك بسلاسة.",
-    icon: "💻",
-    color: "text-blue-400",
-  },
-  {
-    title: "حلول تلبي احتياجاتك",
-    description:
-      "نقدّم لك حلولًا متكاملة تغطي جميع جوانب مشروعك، بدءًا من التخطيط وحتى التنفيذ.",
-    icon: "📱",
-    color: "text-teal-400",
-  },
-];
+import { homePageFeatures, socialLinks } from "../../data";
 
 function Home() {
   return (
@@ -166,13 +107,10 @@ function Home() {
           </ScrollAnimation>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
+            {homePageFeatures.map((feature, index) => (
               <ScrollAnimation animateOnce animateIn="zoomIn" key={index}>
                 <div className="bg-main rounded-lg shadow-lg p-6 flex flex-col items-center h-full">
-                  <div
-                    className={`text-5xl mb-6 ${feature.color}`}
-                    aria-hidden="true"
-                  >
+                  <div className="text-5xl mb-6" aria-hidden="true">
                     {feature.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-center">

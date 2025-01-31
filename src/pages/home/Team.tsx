@@ -1,20 +1,7 @@
 import SectionHeading from "../../components/SectionHeading";
 import TextToIcon from "../../components/TextToIcon";
-import { teamMember } from "../../types";
 import ScrollAnimation from "react-animate-on-scroll";
-
-const team: teamMember[] = [
-  {
-    name: "وليد طالب",
-    img: "/home.png",
-    title: "مؤسس ومدير العمل",
-    social: [
-      { type: "whatsapp", link: "https://wa.me/+966504421904" },
-      { type: "facebook", link: "" },
-      { type: "linkedin", link: "" },
-    ],
-  },
-];
+import { team } from "../../data";
 
 function Team() {
   return (

@@ -7,13 +7,7 @@ import Counter from "../components/Counter";
 import { Typewriter } from "react-simple-typewriter";
 import { FaCalendarAlt, FaChartBar, FaCheckCircle } from "react-icons/fa";
 import { IoRocketSharp } from "react-icons/io5";
-
-const textArr = [
-  "نفهم تطلعاتكم",
-  "نجعل نشاطهم التجاري أكثر فعالية",
-  "نركز على الإبداع والعمل باحترافية عالية",
-  "لا نغفل أهمية ضمان الأمان والحماية",
-];
+import { howAreWetextArr } from "../data";
 
 function HowAreWe() {
   return (
@@ -135,7 +129,7 @@ function HowAreWe() {
             <p className="text-xs md:text-lg flex font-bold text-nowrap">
               <span className="text-purple-500">| نحن في Tb-media |</span>
               <Typewriter
-                words={textArr}
+                words={howAreWetextArr}
                 typeSpeed={70}
                 deleteSpeed={50}
                 cursor

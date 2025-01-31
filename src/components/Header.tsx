@@ -1,23 +1,9 @@
 import { useState } from "react";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { HiX } from "react-icons/hi";
 import { Button, Drawer } from "@material-tailwind/react";
-
-const links = [
-  { to: "/", label: "الرئيسية" },
-  { to: "/how-are-we", label: "من نحن" },
-  { to: "/services", label: "خدماتنا" },
-  { to: "/partners", label: "شركائنا" },
-  { to: "/contact-us", label: "تواصل معنا" },
-];
-
-const socialLinks = [
-  { to: "/", icon: <FaFacebook /> },
-  { to: "/", icon: <FaTwitter /> },
-  { to: "/", icon: <FaLinkedin /> },
-];
+import { headerLinks, headerSocialLinks } from "../data";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -39,7 +25,7 @@ function Header() {
 
           {/* large screens Links */}
           <ul className="pt-0 translate-x-0 bg-transparent gap-6 items-center font-semibold hidden md:flex">
-            {links.map((link, index) => (
+            {headerLinks.map((link, index) => (
               <li key={index} className="p-4 md:p-0 text-left">
                 <NavLink
                   to={link.to}
@@ -58,7 +44,7 @@ function Header() {
 
           {/* Social Links */}
           <ul className="hidden md:flex gap-4 items-center text-black text-lg">
-            {socialLinks.map((link, index) => (
+            {headerSocialLinks.map((link, index) => (
               <li key={index}>
                 <a
                   href={link.to}
@@ -84,7 +70,7 @@ function Header() {
         <div className="container pb-4 block md:hidden">
           {/* Social Links */}
           <ul className="flex gap-4 items-center justify-center text-white text-lg">
-            {socialLinks.map((link, index) => (
+            {headerSocialLinks.map((link, index) => (
               <li key={index}>
                 <a
                   href={link.to}
@@ -121,7 +107,7 @@ function Header() {
         </div>
 
         <ul className="flex flex-col gap-6 items-center font-semibold">
-          {links.map((link, index) => (
+          {headerLinks.map((link, index) => (
             <li key={index} className="p-4 md:p-0 text-left">
               <NavLink
                 to={link.to}
