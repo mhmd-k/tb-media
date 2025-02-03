@@ -1,2 +1,2 @@
 # tb-media
-a website for a aigital agency called "TB media"
+a website for a digital agency called "TB media"
