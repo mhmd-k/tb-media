@@ -89,6 +89,7 @@ function Home() {
                     <a
                       className="block rounded-lg transition-all bg-transparent p-2 hover:bg-purple-500"
                       href={Link.to}
+                      target="_blank"
                     >
                       {Link.icon}
                     </a>

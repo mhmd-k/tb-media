@@ -14,7 +14,10 @@ export const socialLinks = [
   { to: "https://your-X-link", icon: <BsTwitterX /> },
   { to: "", icon: <FaTiktok /> },
   { to: "", icon: <FaFacebook /> },
-  { to: "", icon: <FaInstagram /> },
+  {
+    to: "https://www.instagram.com/tb_media_1?igsh=ZGM5enJ6ODFtOGxp&utm_source=qr",
+    icon: <FaInstagram />,
+  },
   { to: "", icon: <FaSnapchat /> },
 ];
 
