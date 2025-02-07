@@ -11,7 +11,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { service, teamMember } from "../types";
 
 export const socialLinks = [
-  { to: "https://your-X-link", icon: <BsTwitterX /> },
+  { to: "", icon: <BsTwitterX /> },
   { to: "", icon: <FaTiktok /> },
   { to: "", icon: <FaFacebook /> },
   {
@@ -31,7 +31,7 @@ export const headerLinks = [
 
 export const headerSocialLinks = [
   { to: "", icon: <FaFacebook /> },
-  { to: "https://your-X-link", icon: <BsTwitterX /> },
+  { to: "", icon: <BsTwitterX /> },
   { to: "", icon: <FaLinkedin /> },
 ];
 
@@ -111,7 +111,7 @@ export const team: teamMember[] = [
     img: "/home.png",
     title: "مؤسس ومدير العمل",
     social: [
-      { type: "whatsapp", link: "https://wa.me/+966504421904" },
+      { type: "whatsapp", link: "https://wa.me/+966575455328" },
       { type: "facebook", link: "" },
       { type: "linkedin", link: "" },
     ],
