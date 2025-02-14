@@ -1,8 +1,15 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { service } from "../types";
 import ScrollAnimation from "react-animate-on-scroll";
+import Lottie from "react-lottie";
 
-function ServiceCard({ title, description, image, imageAlignment }: service) {
+function ServiceCard({
+  title,
+  description,
+  image,
+  lottie,
+  imageAlignment,
+}: service) {
   const firstWord = title.split(" ")[0];
   const restOfTitle = title.split(" ").slice(1).join(" ");
 
@@ -13,12 +20,16 @@ function ServiceCard({ title, description, image, imageAlignment }: service) {
         animateOnce
         className={`flex-1 max-w-[500px] p-4 md:p-8 order-1 ${imageAlignment === "left" ? "md:order-2" : "md:order-1"}`}
       >
-        <img
-          src={image}
-          className="w-full h-full object-cover rounded-2xl"
-          alt=""
-          loading="lazy"
-        />
+        {image && (
+          <img src={image} alt={title} className="w-full h-auto rounded-lg" />
+        )}
+        {lottie && (
+          <Lottie
+            options={lottie.options}
+            width="100%"
+            style={{ pointerEvents: "none" }}
+          />
+        )}
       </ScrollAnimation>
 
       <ScrollAnimation
@@ -39,7 +50,8 @@ function ServiceCard({ title, description, image, imageAlignment }: service) {
           <p className="md:text-xl mb-4">{e}</p>
         ))}
         <a
-          href="#"
+          href="https://wa.me/+966504421904"
+          target="_blank"
           className="flex gap-2 items-center bg-purple-500 w-fit px-8 py-4 rounded-md mt-6 text-white transition-all hover:scale-105 hover:bg-purple-400"
         >
           اطلب خدمتك الان <FaExternalLinkAlt />

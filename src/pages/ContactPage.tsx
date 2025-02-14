@@ -134,7 +134,7 @@ function ContactPage() {
                   <div className="w-1 h-10 bg-purple-500 absolute right-6 -bottom-10"></div>
                   <FaLocationDot />
                 </div>
-                <p>المملكة العربية السعودية، مدينة الرياض</p>
+                <p>المملكة العربية السعودية، الدمام  </p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-purple-500 p-4 text-xl relative">
@@ -142,13 +142,13 @@ function ContactPage() {
 
                   <BiPhoneIncoming />
                 </div>
-                <p>0552200688</p>
+                <p>0575455328</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-purple-500 p-4 text-xl">
                   <TfiEmail />
                 </div>
-                <p>Support@marketive.sa.com</p>
+                <p>tbmediatec@gmail.com</p>
               </div>
 
               <Lottie

@@ -24,7 +24,7 @@ export default function Counter({ value, direction = "up", className }: Props) {
 
   useEffect(
     () =>
-      springValue.on("change", (latest) => {
+      springValue.onChange((latest) => {
         if (ref.current) {
           ref.current.textContent = Intl.NumberFormat("en-US").format(
             Math.round(latest)

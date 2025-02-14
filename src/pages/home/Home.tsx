@@ -39,9 +39,11 @@ function Home() {
                 <span className="block w-24 h-1 bg-purple-500 rounded-md"></span>
               </div>
               <p className="text-center text-base mb-10 md:text-xl">
-                نقدم مختلف الخدمات للأعمال باحترافية عالية وإتقان مدروس، معتمدين
-                في ذلك على أحدث الوسائل والتقنيات في إنشاء الخدمات التي تعتبر
-                ركيزة أساسية في نجاح نشاطك التجاري
+             <h1 className="text-center text-purple-500 text-2xl my-5 md:text-3xl" >TB MEDIA</h1>
+              نحن هنا لنساعدك في تطوير وتحقيق أهدافك التجارية عبر
+               الإنترنت من خلال استراتيجيات تسويق رقمي مبتكرة وحلول
+                فعالة على منصات السوشيال ميديا. سواء كنت تسعى لزيادة الوعي بعلامتك التجارية أو
+               تحسين التفاعل مع جمهورك، نحن نقدم لك الأدوات والخبرات اللازمة للوصول إلى النجاح.
               </p>
               <div className="relative mx-auto w-fit">
                 <div className="absolute arrow-lottie lottie">
@@ -53,7 +55,8 @@ function Home() {
                 </div>
                 <a
                   className="px-8 py-4 bg-purple-600 w-fit transition-all flex gap-4 items-center rounded-lg hover:opacity-80 hover:scale-110"
-                  href=""
+                  href="https://wa.me/+966504421904"
+                  target="_blank"
                 >
                   اطلب خدمتك الان <LiaLinkSolid />
                 </a>

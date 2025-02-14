@@ -13,7 +13,6 @@ function Header() {
 
   return (
     <>
-      {" "}
       <header className="rounded-xl fixed mt-2">
         <div className="container px-2 py-2 my-2 text-white flex justify-between items-center">
           {/* Logo */}

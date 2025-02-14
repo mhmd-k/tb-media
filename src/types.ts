@@ -1,3 +1,5 @@
+import { Options } from "react-lottie";
+
 export type social =
   | "facebook"
   | "tweeter"
@@ -22,6 +24,9 @@ export type teamMember = {
 export type service = {
   title: string;
   description: string;
-  image: string;
+  image?: string;
+  lottie?: {
+    options: Options;
+  };
   imageAlignment: "left" | "right";
 };
