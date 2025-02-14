@@ -35,7 +35,7 @@ function HowAreWe() {
                 </div>
                 <img
                   className="w-full h-full object-cover rounded-3xl"
-                  src="/home.png"
+                  src="/home.jpg"
                   alt=""
                   loading="lazy"
                 />
@@ -47,11 +47,12 @@ function HowAreWe() {
             <ScrollAnimation animateIn="fadeInLeft" animateOnce>
               <SectionHeading title="من نحن" />
               <p className="mb-6 text-lg">
-              "نحن في TB Media نقدم خدمات تسويق إلكتروني متكاملة لتمكينك من تحقيق النجاح عبر وسائل التواصل الاجتماعي. 
-              يشمل فريقنا إدارة حسابات السوشيال ميديا، تصميم الهوية التجارية والشعارات،
-               تصميم محتوى مميز لمنصات التواصل،
-               التصوير الاحترافي وتغطية الفعاليات،
-               بالإضافة إلى تصميم المواقع الإلكترونية وتطبيقات الموبايل التي تساعدك على التميز في سوقك."
+                "نحن في TB Media نقدم خدمات تسويق إلكتروني متكاملة لتمكينك من
+                تحقيق النجاح عبر وسائل التواصل الاجتماعي. يشمل فريقنا إدارة
+                حسابات السوشيال ميديا، تصميم الهوية التجارية والشعارات، تصميم
+                محتوى مميز لمنصات التواصل، التصوير الاحترافي وتغطية الفعاليات،
+                بالإضافة إلى تصميم المواقع الإلكترونية وتطبيقات الموبايل التي
+                تساعدك على التميز في سوقك."
               </p>
               <p className="mb-6 text-lg">
                 نقدم مختلف الخدمات للأعمال باحترافية عالية وإتقان مدروس، معتمدين
@@ -73,10 +74,12 @@ function HowAreWe() {
             <ScrollAnimation animateIn="fadeInLeft" animateOnce>
               <SectionHeading title="رؤيتنا" />
               <p className="text-lg">
-              "رؤيتنا في TB Media هي أن نكون الشريك الأمثل لكل الأعمال التجارية التي تسعى للنمو الرقمي والابتكار.
-               نحن نؤمن بأن التسويق الإلكتروني هو أداة قوية لتحقيق التميز،
-                لذا نعمل على تقديم حلول مبتكرة وشاملة تساعد عملاءنا على بناء وجود قوي وملموس على الإنترنت،
-                 وتعزيز التفاعل مع جمهورهم، مما يسهم في نجاحهم وزيادة مبيعاتهم وتحقيق نمو مستدام."
+                "رؤيتنا في TB Media هي أن نكون الشريك الأمثل لكل الأعمال
+                التجارية التي تسعى للنمو الرقمي والابتكار. نحن نؤمن بأن التسويق
+                الإلكتروني هو أداة قوية لتحقيق التميز، لذا نعمل على تقديم حلول
+                مبتكرة وشاملة تساعد عملاءنا على بناء وجود قوي وملموس على
+                الإنترنت، وتعزيز التفاعل مع جمهورهم، مما يسهم في نجاحهم وزيادة
+                مبيعاتهم وتحقيق نمو مستدام."
               </p>
             </ScrollAnimation>
           </div>
@@ -94,11 +97,11 @@ function HowAreWe() {
         </div>
       </section>
 
-        <section className="bg-secondary py-10">
+      <section className="bg-secondary py-10">
         <div className="container px-5 mx-auto overflow-hidden">
           <SectionHeading title="في TB-Media" />
 
-         {/* Statistics Section */}
+          {/* Statistics Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 w-full max-w-[1000px] mx-auto">
             <div className="bg-main rounded-lg p-10 flex border-1 border-transparent flex-col items-center gap-4 transition-all hover:border-purple-500">
               <p className="text-5xl relative">
@@ -180,7 +183,7 @@ function HowAreWe() {
             </ScrollAnimation>
           </div>
         </div>
-      </section>  
+      </section>
 
       <ContactPage />
     </>

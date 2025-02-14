@@ -39,11 +39,14 @@ function Home() {
                 <span className="block w-24 h-1 bg-purple-500 rounded-md"></span>
               </div>
               <p className="text-center text-base mb-10 md:text-xl">
-             <h1 className="text-center text-purple-500 text-2xl my-5 md:text-3xl" >TB MEDIA</h1>
-              نحن هنا لنساعدك في تطوير وتحقيق أهدافك التجارية عبر
-               الإنترنت من خلال استراتيجيات تسويق رقمي مبتكرة وحلول
-                فعالة على منصات السوشيال ميديا. سواء كنت تسعى لزيادة الوعي بعلامتك التجارية أو
-               تحسين التفاعل مع جمهورك، نحن نقدم لك الأدوات والخبرات اللازمة للوصول إلى النجاح.
+                <h1 className="text-center text-purple-500 text-2xl my-5 md:text-3xl">
+                  TB MEDIA
+                </h1>
+                نحن هنا لنساعدك في تطوير وتحقيق أهدافك التجارية عبر الإنترنت من
+                خلال استراتيجيات تسويق رقمي مبتكرة وحلول فعالة على منصات
+                السوشيال ميديا. سواء كنت تسعى لزيادة الوعي بعلامتك التجارية أو
+                تحسين التفاعل مع جمهورك، نحن نقدم لك الأدوات والخبرات اللازمة
+                للوصول إلى النجاح.
               </p>
               <div className="relative mx-auto w-fit">
                 <div className="absolute arrow-lottie lottie">
@@ -80,7 +83,7 @@ function Home() {
                 </div>
                 <img
                   className="w-full h-full object-cover rounded-3xl"
-                  src="/home.png"
+                  src="/home.jpg"
                   alt=""
                   loading="lazy"
                 />
