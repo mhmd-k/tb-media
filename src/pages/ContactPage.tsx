@@ -123,9 +123,10 @@ function ContactPage() {
           >
             <div className="mb-6">
               <img
-                src="/logo.jpg"
+                src="/logo-transparent-bg.png"
                 alt="Marketive Logo"
                 className="w-20 h-20 mx-auto md:mx-0"
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col gap-6">
@@ -134,7 +135,7 @@ function ContactPage() {
                   <div className="w-1 h-10 bg-purple-500 absolute right-6 -bottom-10"></div>
                   <FaLocationDot />
                 </div>
-                <p>المملكة العربية السعودية، الدمام  </p>
+                <p>المملكة العربية السعودية، الدمام </p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-purple-500 p-4 text-xl relative">
@@ -142,13 +143,13 @@ function ContactPage() {
 
                   <BiPhoneIncoming />
                 </div>
-                <p>0575455328</p>
+                <p style={{ direction: "ltr" }}>+966575455328</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-purple-500 p-4 text-xl">
                   <TfiEmail />
                 </div>
-                <p>tbmediatec@gmail.com</p>
+                <p>info@tbmediatec.com</p>
               </div>
 
               <Lottie

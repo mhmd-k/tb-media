@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import SectionHeading from "../../components/SectionHeading";
 import Services from "./Services";
 import Partners from "./Partners";
-import Team from "./Team";
+// import Team from "./Team";
 import ContactPage from "../ContactPage";
 import ScrollAnimation from "react-animate-on-scroll";
 import {
@@ -137,7 +137,7 @@ function Home() {
 
       <Partners bgColor="#f5f5f5" textColor="#0d1018" />
 
-      <Team />
+      {/* <Team /> */}
 
       <ContactPage />
     </>

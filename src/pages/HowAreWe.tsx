@@ -3,7 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "react-lottie";
 import { cubelottieOptions } from "../data/lottiesOptions";
 import ContactPage from "./ContactPage";
-import Counter from "../components/Counter";
+// import Counter from "../components/Counter";
 import { Typewriter } from "react-simple-typewriter";
 import { FaCalendarAlt, FaChartBar, FaCheckCircle } from "react-icons/fa";
 import { IoRocketSharp } from "react-icons/io5";
@@ -99,10 +99,10 @@ function HowAreWe() {
 
       <section className="bg-secondary py-10">
         <div className="container px-5 mx-auto overflow-hidden">
-          <SectionHeading title="في TB-Media" />
+          {/* <SectionHeading title="في TB-Media" /> */}
 
           {/* Statistics Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 w-full max-w-[1000px] mx-auto">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 w-full max-w-[1000px] mx-auto">
             <div className="bg-main rounded-lg p-10 flex border-1 border-transparent flex-col items-center gap-4 transition-all hover:border-purple-500">
               <p className="text-5xl relative">
                 <Counter value={200} />
@@ -130,7 +130,7 @@ function HowAreWe() {
               </p>
               <p className="mt-2">مشروع مكتمل</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Description Section */}
           <div className="text-center w-full flex justify-center my-14">
