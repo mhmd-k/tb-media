@@ -88,7 +88,7 @@ function HowAreWe() {
             <ScrollAnimation animateIn="fadeInRight" animateOnce>
               <img
                 src="/vision.png"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain mix-blend-multiply"
                 alt=""
                 loading="lazy"
               />

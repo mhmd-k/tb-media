@@ -21,14 +21,15 @@ function Footer() {
         <div className="flex mb-8 justify-center items-center">
           <div className="w-32">
             <img
-              src="/WhatsApp Image 2025-01-04 at 3.15.53 PM.png"
+              src="/logo-transparent-bg.png"
               alt=""
               className="w-full h-full object-contain"
             />
           </div>
 
           <p className="text-center flex-1 max-w-[300px]">
-          "TB Media  فريق متكامل يعمل على تسويق فعال لتحقيق نجاح نشاطك التجاري والوصول به إلى آفاق جديدة.
+            "TB Media فريق متكامل يعمل على تسويق فعال لتحقيق نجاح نشاطك التجاري
+            والوصول به إلى آفاق جديدة.
           </p>
         </div>
 

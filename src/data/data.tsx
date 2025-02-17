@@ -11,6 +11,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { service, teamMember } from "../types";
 import {
   appDevelopmentLottieOptions,
+  cameraLottieOptions,
   marketingLottieOptions,
   mediaManagmentLottieOptions,
   webDesignLottieOptions,
@@ -20,7 +21,10 @@ import {
 
 export const socialLinks = [
   { to: "", icon: <BsTwitterX /> },
-  { to: "", icon: <FaTiktok /> },
+  {
+    to: "https://www.tiktok.com/@tb.media50?_t=ZS-8tzzHHQf9ST&_r=1",
+    icon: <FaTiktok />,
+  },
   { to: "", icon: <FaFacebook /> },
   {
     to: "https://www.instagram.com/tb_media_1?igsh=ZGM5enJ6ODFtOGxp&utm_source=qr",
@@ -93,33 +97,33 @@ export const partners = [
 export const services = [
   {
     title: "التسويق الرقمي",
-    icon: "/customer-service-agent.png",
+    icon: "/digital-marketing.jpg",
   },
 
   {
     title: "إدارة حسابات سوشيال ميديا ",
-    icon: "/customer-service-agent.png",
+    icon: "/social-media.jpg",
   },
   {
     title: "تصاميم وبناء هوية تجارية",
-    icon: "/trade-identity.png",
+    icon: "/public/identity.jpg",
   },
   {
     title: "تصوير الفعاليات والمنتجات ",
-    icon: "/trade-identity.png",
+    icon: "/camera.jpg",
   },
-  {
-    title: "موشن غرافيك",
-    icon: "/motion-graphics.png",
-  },
+  // {
+  //   title: "موشن غرافيك",
+  //   icon: "/motion-graphics.png",
+  // }
   {
     title: "تصميم مواقع ويب",
-    icon: "/coding.png",
+    icon: "/web-dev.jpg",
   },
 
   {
     title: "تصميم تطبيقات الموبايل",
-    icon: "/user-interface.png",
+    icon: "/app-dev.jpg",
   },
 ];
 
@@ -180,5 +184,12 @@ export const extendedServices: service[] = [
       " نقدم لك تصميم مواقع ويب بسيطة واحترافية تضمن لك تجربة مستخدم مريحة وسهلة. نحن نركز على تقديم مواقع سريعة الاستجابة، تصميمات نظيفة، وهيكلية واضحة، بحيث يمكن لزوارك التفاعل معها بكل سهولة. سواء كنت تحتاج إلى موقع شخصي، تجاري، أو مدونة، نحن هنا لتحويل أفكارك إلى موقع ويب يعمل بكفاءة ويعكس هويتك الرقمية بشكل بسيط وفعّال.",
     lottie: { options: WebDevelopmentLottieOptions },
     imageAlignment: "right",
+  },
+  {
+    title: "التصوير ",
+    description:
+      "تصوير المنتجات  والفعاليات بكل احترافية ,نقدم خدمات متنوعة تشمل تصوير المنتجات وأصناف الطعام بشكل احترافي لتسليط الضوء على الأطباق بأعلى جودة، بالإضافة إلى تصوير الفعاليات والمناسبات بكل تفاصيلها الهامة، من تقارير مصورة وفيديوهات احترافية. نحن نلتزم بتقديم محتوى متميز يعكس هوية عملك بأعلى مستوى من الجودة والإبداع.",
+    lottie: { options: cameraLottieOptions },
+    imageAlignment: "left",
   },
 ];
