@@ -106,7 +106,7 @@ export const services = [
   },
   {
     title: "تصاميم وبناء هوية تجارية",
-    icon: "/public/identity.jpg",
+    icon: "/identity.jpg",
   },
   {
     title: "تصوير الفعاليات والمنتجات ",
