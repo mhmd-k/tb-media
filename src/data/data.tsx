@@ -97,33 +97,35 @@ export const partners = [
 export const services = [
   {
     title: "التسويق الرقمي",
-    icon: "/digital-marketing.jpg",
+    icon: "/digital-marketing.png",
   },
 
   {
     title: "إدارة حسابات سوشيال ميديا ",
-    icon: "/social-media.jpg",
+    icon: "/social-media.png",
   },
   {
     title: "تصاميم وبناء هوية تجارية",
-    icon: "/identity.jpg",
+    icon: "/identity.png",
   },
   {
     title: "تصوير الفعاليات والمنتجات ",
-    icon: "/camera.jpg",
+    icon: "/camera.png",
   },
+
   // {
   //   title: "موشن غرافيك",
   //   icon: "/motion-graphics.png",
   // }
+
   {
     title: "تصميم مواقع ويب",
-    icon: "/web-dev.jpg",
+    icon: "/web-dev.png",
   },
 
   {
     title: "تصميم تطبيقات الموبايل",
-    icon: "/app-dev.jpg",
+    icon: "/app-dev.png",
   },
 ];
 
