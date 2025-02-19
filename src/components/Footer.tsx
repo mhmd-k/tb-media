@@ -1,18 +1,4 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaSnapchat,
-  FaTiktok,
-  FaTwitter,
-} from "react-icons/fa";
-
-const socialLinks = [
-  { to: "", icon: <FaTwitter /> },
-  { to: "", icon: <FaTiktok /> },
-  { to: "", icon: <FaFacebook /> },
-  { to: "", icon: <FaInstagram /> },
-  { to: "", icon: <FaSnapchat /> },
-];
+import { socialLinks } from "../data/data";
 
 function Footer() {
   return (
