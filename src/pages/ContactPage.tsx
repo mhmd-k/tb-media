@@ -143,7 +143,7 @@ function ContactPage() {
 
                   <BiPhoneIncoming />
                 </div>
-                <p style={{ direction: "ltr" }}>+966575455328</p>
+                <p style={{ direction: "ltr" }}>0575455328</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-purple-500 p-4 text-xl">

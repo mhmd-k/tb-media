@@ -51,7 +51,7 @@ function ServiceCard({
           .split(".")
           .map((e) => e && <p className="md:text-xl mb-4">{e}.</p>)}
         <a
-          href="https://wa.me/+966575455328"
+          href="https://wa.me/0575455328"
           target="_blank"
           className="flex gap-2 items-center bg-purple-500 w-fit px-8 py-4 rounded-md mt-6 text-white transition-all hover:scale-105 hover:bg-purple-400"
         >

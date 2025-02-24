@@ -1,13 +1,6 @@
 // this file is used to export all the text, icons, images used in the project
 
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaSnapchat,
-  FaTiktok,
-} from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { service, teamMember } from "../types";
 import {
   appDevelopmentLottieOptions,
@@ -17,20 +10,24 @@ import {
   webDesignLottieOptions,
   WebDevelopmentLottieOptions,
 } from "./lottiesOptions";
-//import marketingLottieOptions from "../lottiesOptions";
 
 export const socialLinks = [
-  { to: "", icon: <BsTwitterX /> },
   {
-    to: "https://www.tiktok.com/@tb.media50?_t=ZS-8tzzHHQf9ST&_r=1",
+    to: "https://www.tiktok.com/@tb.media_tec?_t=ZS-8uAP2isxbd3&_r=1",
     icon: <FaTiktok />,
   },
-  { to: "", icon: <FaFacebook /> },
   {
-    to: "https://www.instagram.com/tb_media_1?igsh=ZGM5enJ6ODFtOGxp&utm_source=qr",
+    to: "https://www.facebook.com/profile.php?id=61573606581041&locale=ar_AR",
+    icon: <FaFacebook />,
+  },
+  {
+    to: "https://www.instagram.com/tb_media_1",
     icon: <FaInstagram />,
   },
-  { to: "", icon: <FaSnapchat /> },
+  {
+    to: "https://www.linkedin.com/in/tb-media-tec-978b7b352/",
+    icon: <FaLinkedin />,
+  },
 ];
 
 export const headerLinks = [
@@ -42,9 +39,18 @@ export const headerLinks = [
 ];
 
 export const headerSocialLinks = [
-  { to: "", icon: <FaFacebook /> },
-  { to: "", icon: <BsTwitterX /> },
-  { to: "", icon: <FaLinkedin /> },
+  {
+    to: "https://www.instagram.com/tb_media_1",
+    icon: <FaInstagram />,
+  },
+  {
+    to: "https://www.facebook.com/profile.php?id=61573606581041&locale=ar_AR",
+    icon: <FaFacebook />,
+  },
+  {
+    to: "https://www.linkedin.com/in/tb-media-tec-978b7b352/",
+    icon: <FaLinkedin />,
+  },
 ];
 
 export const homePageFeatures = [
@@ -86,13 +92,7 @@ export const homePageFeatures = [
   },
 ];
 
-export const partners = [
-  "/partner.jpg",
-  "/logo.jpg",
-  "/partner.jpg",
-  "/logo.jpg",
-  "/partner.jpg",
-];
+export const partners = ["/partner-1.jpg", "/partner-2.jpg", "/partner-3.jpg"];
 
 export const services = [
   {
@@ -151,6 +151,14 @@ export const howAreWetextArr = [
 
 export const extendedServices: service[] = [
   {
+    title: "التصوير ",
+    description:
+      "تصوير المنتجات  والفعاليات بكل احترافية ,نقدم خدمات متنوعة تشمل تصوير المنتجات وأصناف الطعام بشكل احترافي لتسليط الضوء على الأطباق بأعلى جودة، بالإضافة إلى تصوير الفعاليات والمناسبات بكل تفاصيلها الهامة، من تقارير مصورة وفيديوهات احترافية. نحن نلتزم بتقديم محتوى متميز يعكس هوية عملك بأعلى مستوى من الجودة والإبداع.",
+    lottie: { options: cameraLottieOptions },
+    imageAlignment: "left",
+  },
+
+  {
     title: "التسويق الرقمي والإعلانات وإنشاء الخطط التسويقية",
     description:
       " نقدم لك حلولاً شاملة للتسويق الرقمي من خلال إنشاء حملات إعلانية موجهة على منصات متنوعة مثل فيسبوك، إنستغرام، جوجل وغيرها. نحن نعمل على تطوير استراتيجيات تسويقية مبتكرة لزيادة الوعي بالعلامة التجارية، جذب العملاء المحتملين، وتحقيق نتائج قابلة للقياس. بدءًا من تحديد الجمهور المستهدف، مرورًا بتصميم الحملات الإعلانية، وصولًا إلى تحليل الأداء، نساعدك في تحقيق أهدافك التسويقية بكل احترافية وفعالية.",
@@ -186,12 +194,5 @@ export const extendedServices: service[] = [
       " نقدم لك تصميم مواقع ويب بسيطة واحترافية تضمن لك تجربة مستخدم مريحة وسهلة. نحن نركز على تقديم مواقع سريعة الاستجابة، تصميمات نظيفة، وهيكلية واضحة، بحيث يمكن لزوارك التفاعل معها بكل سهولة. سواء كنت تحتاج إلى موقع شخصي، تجاري، أو مدونة، نحن هنا لتحويل أفكارك إلى موقع ويب يعمل بكفاءة ويعكس هويتك الرقمية بشكل بسيط وفعّال.",
     lottie: { options: WebDevelopmentLottieOptions },
     imageAlignment: "right",
-  },
-  {
-    title: "التصوير ",
-    description:
-      "تصوير المنتجات  والفعاليات بكل احترافية ,نقدم خدمات متنوعة تشمل تصوير المنتجات وأصناف الطعام بشكل احترافي لتسليط الضوء على الأطباق بأعلى جودة، بالإضافة إلى تصوير الفعاليات والمناسبات بكل تفاصيلها الهامة، من تقارير مصورة وفيديوهات احترافية. نحن نلتزم بتقديم محتوى متميز يعكس هوية عملك بأعلى مستوى من الجودة والإبداع.",
-    lottie: { options: cameraLottieOptions },
-    imageAlignment: "left",
   },
 ];

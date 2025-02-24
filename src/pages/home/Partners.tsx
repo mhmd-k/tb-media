@@ -30,9 +30,14 @@ function Partners({
           {partners.slice(0, 5).map((p, i) => (
             <div
               key={i}
-              className="w-52 h-52 bg-white p-2 flex justify-center items-center"
+              className="w-52 h-52 bg-white p-2 flex justify-center items-center overflow-hidden"
             >
-              <img className="object-fit" src={p} alt="" loading="lazy" />
+              <img
+                className="w-full h-full object-contain"
+                src={p}
+                alt=""
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
@@ -63,9 +68,14 @@ function Partners({
           children={partners.map((p, i) => (
             <div
               key={i}
-              className="w-52 h-52 bg-white p-2 flex justify-center items-center mx-auto"
+              className="w-52 h-52 bg-white p-2 flex justify-center items-center mx-auto overflow-hidden"
             >
-              <img className="object-fit" src={p} alt="" loading="lazy" />
+              <img
+                className="w-full h-full object-contain"
+                src={p}
+                alt=""
+                loading="lazy"
+              />
             </div>
           ))}
           draggable
@@ -104,18 +114,18 @@ function Partners({
           autoplay={true}
           children={TabletPartners.map((p, i) => (
             <div className="flex" key={i}>
-              <div className="w-52 h-52 bg-white p-2 flex justify-center items-center mx-auto">
+              <div className="w-52 h-52 bg-white p-2 flex justify-center items-center mx-auto overflow-hidden">
                 <img
-                  className="object-fit"
+                  className="w-full h-full object-contain"
                   src={p.imageOne}
                   alt=""
                   loading="lazy"
                 />
               </div>
               {p.imageTwo && (
-                <div className="w-52 h-52 bg-white p-2 flex justify-center items-center mx-auto">
+                <div className="w-52 h-52 bg-white p-2 flex justify-center items-center mx-auto overflow-hidden">
                   <img
-                    className="object-fit"
+                    className="w-full h-full object-contain"
                     src={p.imageTwo}
                     alt=""
                     loading="lazy"
