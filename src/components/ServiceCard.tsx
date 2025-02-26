@@ -2,6 +2,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { service } from "../types";
 import ScrollAnimation from "react-animate-on-scroll";
 import Lottie from "react-lottie";
+import { phoneNumber } from "../data/data";
 
 function ServiceCard({
   title,
@@ -51,7 +52,7 @@ function ServiceCard({
           .split(".")
           .map((e) => e && <p className="md:text-xl mb-4">{e}.</p>)}
         <a
-          href="https://wa.me/0575455328"
+          href={`https://wa.me/${phoneNumber}`}
           target="_blank"
           className="flex gap-2 items-center bg-purple-500 w-fit px-8 py-4 rounded-md mt-6 text-white transition-all hover:scale-105 hover:bg-purple-400"
         >

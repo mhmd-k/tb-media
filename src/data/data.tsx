@@ -11,6 +11,8 @@ import {
   WebDevelopmentLottieOptions,
 } from "./lottiesOptions";
 
+export const phoneNumber = "966575455328";
+
 export const socialLinks = [
   {
     to: "https://www.tiktok.com/@tb.media_tec?_t=ZS-8uAP2isxbd3&_r=1",

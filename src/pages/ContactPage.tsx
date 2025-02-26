@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { ImSpinner2 } from "react-icons/im";
+import { phoneNumber } from "../data/data";
 
 const EMAIL_REGX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
@@ -143,7 +144,7 @@ function ContactPage() {
 
                   <BiPhoneIncoming />
                 </div>
-                <p style={{ direction: "ltr" }}>0575455328</p>
+                <p style={{ direction: "ltr" }}>{phoneNumber}</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-purple-500 p-4 text-xl">
